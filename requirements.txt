@@ -1,0 +1,18 @@
+# Core dependencies
+websockets==12.0  # For Twilio WebSocket server
+twilio==8.11.0
+python-dotenv==1.0.1
+deepgram-sdk==5.2.0  # Deepgram Voice Agent SDK
+
+# Async support
+asyncio==3.4.3
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2024.1
+
+# Logging and monitoring
+structlog==24.1.0  # Enhanced structured logging
+
+# LLM for context summarization
+openai>=1.30.0  # Used for Groq API (OpenAI-compatible) 
