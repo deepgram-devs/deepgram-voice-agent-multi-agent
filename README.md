@@ -1,6 +1,6 @@
-# Multi-Agent Voice System
+# Deepgram Voice Agent API Multi-Agent Implementation
 
-A reference implementation demonstrating **multi-agent voice conversation architecture** using Deepgram's Voice Agent API, where specialized agents handle different phases of customer interactions through seamless handoffs.
+A reference implementation demonstrating a multi-agent architecture using Deepgram's Voice Agent API, where specialized agents handle different phases of customer interactions through seamless handoffs.
 
 ## Why Multi-Agent Architecture?
 
@@ -283,7 +283,7 @@ Agent: "Thank you! Have a great day!"
 ## Project Structure
 
 ```
-multi-agent-sales-lead/
+deepgram-voice-agent-multi-agent-/
 ├── main.py                      # Entry point - starts server, initiates calls
 ├── config.py                    # Environment variable management
 │
@@ -298,13 +298,12 @@ multi-agent-sales-lead/
 │   └── closer/                  # Closer agent configuration
 │
 ├── utils/
-│   └── context_summarizer.py   # Groq-based summarization
+│   └── context_summarizer.py   # Groq LLM summarization
 │
 ├── call_handling/
 │   └── twilio_client.py        # Twilio API wrapper
 │
 └── docs/
-    ├── ARCHITECTURE.md          # Deep technical dive
     ├── PROMPT_GUIDE.md          # Voice agent prompt best practices
     └── FUNCTION_GUIDE.md        # Function definition best practices
 ```
@@ -334,8 +333,6 @@ Edit the prompts in each agent's config file:
 **Important**: See `docs/PROMPT_GUIDE.md` for voice-specific prompt engineering best practices.
 
 ### Add New Agents
-
-See `docs/ARCHITECTURE.md` section "Extending the System" for detailed instructions.
 
 Quick overview:
 1. Create `agents/your_agent/config.py` with agent configuration
